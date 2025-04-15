@@ -1,0 +1,7 @@
+# 
+User-agent: Googlebot
+Disallow: 
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://assil775458250.github.io/yemen_book_assil/
