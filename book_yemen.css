@@ -1,0 +1,379 @@
+/* إخفاء شريط التمرير في المتصفحات التي تدعم WebKit (مثل Chrome و Safari) */
+::-webkit-scrollbar {
+    width: 0 !important; /* إخفاء شريط التمرير */
+}
+
+/* إخفاء شريط التمرير في Firefox */
+html {
+    scrollbar-width: none; /* إخفاء شريط التمرير */
+}
+@media (width<=500px) {
+    .level_img
+{
+    width: 60%;
+    /* padding: -20px; */
+    margin: 20px;
+}
+}
+@media (width>500px) {
+    .level_img
+{
+    width: 35vw;
+    /* padding: 20px; */
+    margin: 20px;
+}
+    
+}
+
+/* إخفاء شريط التمرير في Internet Explorer و Edge */
+body {
+    -ms-overflow-style: none; /* إخفاء شريط التمرير */
+}
+
+/* التأكد من إخفاء شريط التمرير مع السماح بالتمرير */
+html, body {
+    overflow: auto; /* السماح بالتمرير */
+}
+
+header div{
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+
+}
+.h11
+{
+    
+    position: fixed;
+    width: 100%;
+    border-radius:10px 10px 0 0 ;
+    color:white;background-color: rgb(6, 194, 34);
+
+}
+.h22
+{
+    color:white;background-color: rgb(6, 194, 34);
+    border-radius:20px 20px 0 0 ;
+}
+
+.level_img_1
+{
+    width: 160px;
+    height: 250px;
+    /* padding: 20px; */
+    margin: 20px;
+ 
+}
+
+.level_img:hover
+{
+    /* width: 350px; */
+    /* padding: 20px; */
+    /* border: 5px solid red  ; */
+    box-shadow:7px 7px rgb(3, 3, 3);
+    /* box-shadow: inset 0 0 5px 50px red; */
+    color: #ee6352;
+    transform: translateY(-30px);
+    transition: 0.5s;
+
+}
+.level_img:active,.level_img_1:active,.mp1:active,.mp11:active,.mp2:active,.mp22:active
+{
+    transform: perspective(500px) rotateY(45deg);
+    transition: 0.5s;
+}
+.level_img_1:hover
+{
+    /* width: 350px; */
+    /* padding: 20px; */
+    box-shadow:7px 7px rgb(3, 3, 3);
+    transform: translateY(-30px);
+    transition: 0.5s;
+    
+}
+
+.div_level_img
+{
+    margin: 0;
+   
+    
+}
+.div_level_img img
+{
+  border-radius: 30%; 
+}
+.l_1_1_div img
+{
+ width: 350px;
+ padding-left: 50px;
+ padding-right: 50px;
+ padding-bottom: 50px;
+
+}
+.l_1_1_div
+{
+    margin-top: 50px;
+  
+}
+.elme
+{
+    color: red;
+    padding: 50px;
+    font-size:250%;
+    font-weight: bolder;
+    border: 2px solid black;
+    font-family:  Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 70px;
+    border-radius: 10% 30%;
+    margin: 100px;
+    background: yellow;
+    text-align: center;
+    text-shadow: 2px 2px  rgb(10, 0, 11);
+}
+.adbe
+{
+    color: rgb(6, 80, 253);
+    padding: 50px;
+    font-size: 250%;
+    font-weight: bolder;
+    text-shadow: 2px 2px  rgb(10, 0, 11);
+    border: 2px solid black;
+    font-family:  Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 70px;
+    border-radius: 30% 10%;
+    margin: 100px;
+    background: yellow;
+    text-align: center;
+    
+}
+.mp1
+{
+    color: rgb(253, 6, 6);
+    padding: 50px;
+    font-size: 250%;
+    font-weight: bolder;
+    text-shadow: 2px 2px  rgb(10, 0, 11);
+    border: 2px solid black;
+    font-family:  Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 250px;
+    border-radius: 10% 30%;
+    margin: 10px;
+    background: yellow;
+    text-align: center;
+   
+
+}
+.mp1:hover
+{
+    box-shadow:7px 7px rgb(3, 3, 3);
+    transform: translateY(-30px);
+    transition: 0.5s;
+}
+
+/* 3333333333333333333333333333333333333333333 */
+.mp11
+{
+    color: rgb(6, 80, 253);
+    padding: 50px;
+    font-size: 250%;
+    font-weight: bolder;
+    text-shadow: 2px 2px  rgb(10, 0, 11);
+    border: 2px solid black;
+    font-family:  Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 250px;
+    border-radius: 10% 30%;
+    margin: 10px;
+    background: yellow;
+    text-align: center;
+   
+
+}
+.mp11:hover
+{
+    box-shadow:7px 7px rgb(3, 3, 3);
+    transform: translateY(-30px);
+    transition: 0.5s;
+}
+
+.mp2
+{
+    text-align: center;
+    color: rgb(253, 6, 6);
+    padding: 50px;
+    font-size: 250%;
+    font-weight: bolder;
+    text-shadow: 2px 2px  rgb(10, 0, 11);
+    border: 2px solid black;
+    font-family:  Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 250px;
+    border-radius: 30% 10%;
+    margin: 10px;
+    background: yellow;
+    
+
+}
+.mp2:hover
+{
+    box-shadow:7px 7px rgb(3, 3, 3);
+    transform: translateY(-30px);
+    transition: 0.5s;
+}
+
+.mp22
+{
+    text-align: center;
+    border: 5px solid   rgb(6, 80, 253); ;
+    padding: 50px;
+    font-size: 250%;
+    font-weight: bolder;
+    text-shadow: 2px 2px  rgb(10, 0, 11);
+    border: 2px solid black;
+    font-family:  Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 250px;
+    border-radius: 30% 10%;
+    margin: 10px;
+    background: yellow;
+    
+    
+
+}
+.mp22:hover
+{
+    box-shadow:7px 7px rgb(3, 3, 3);
+    transform: translateY(-30px);
+    transition: 0.5s;
+}
+
+.q2019
+{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 50px;
+    font-size: 250%;
+    font-weight: bolder;
+    text-shadow: 2px 2px  rgb(10, 0, 11);
+    border: 2px solid black;
+    font-family:  Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 250px;
+    border-radius: 30% 10% 20% 5%;
+    margin: 10px;
+    background: rgb(123, 0, 255);
+
+
+}
+
+.l_i 
+{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+.drop_content
+{
+    display: none;
+    position: absolute;
+   width: 80%;
+
+    
+   
+}
+
+
+.dropdown:hover .drop_content
+{
+    display: block;
+}
+.hold:hover .drop_content
+{
+    display: none;
+}
+.ass
+{
+    border-bottom: 2px solid ;
+    background-color: #ffffff;
+    display: block;
+    border-radius: 10px ;
+    padding: 0;
+    text-decoration: none;
+    color: blue;
+   font-size:70%; 
+   width: 1400%;
+}
+.ass:hover
+{
+    /* color: rgb(0, 0, 0); */
+    background-color: rgb(213, 213, 213);
+    border: 2px solid white;
+}
+.list
+{
+    
+    
+  text-decoration: none;
+ font-size: 150%;
+ padding: 20px; 
+
+ /* white-space: nowrap;
+ overflow-x: auto;
+ overflow-y: hidden; */
+ color: white;
+ font-weight: bolder;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ border-left: 2px solid;
+ border-radius: 35px;
+
+
+
+  
+}
+.list_item
+{
+    /* direction: rtl; */
+    padding: 5px;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    display: flex;
+    
+    background-color: rgb(210, 149, 57);
+    /* height: 30px; */
+    border: 1px solid;
+    
+    overflow-x: scroll;
+    overflow-y: hidden;
+	white-space: nowrap;
+    
+}
+.list_item a:hover
+{
+    background-color: rgb(153, 153, 153);
+    color: white;
+}
+.h111
+{
+    position: fixed;
+    width: 100%;
+    border-radius:10px 10px 0 0 ;
+    color:white;background-color: rgb(6, 194, 34);
+    padding-top:40px;padding-bottom:30px;font-weight: bolder;font-size: 200%;font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.h222
+{
+
+   
+    border-radius:10px 10px 0 0 ;
+    color:white;background-color: rgb(6, 194, 34);
+    padding-top:40px;padding-bottom:30px;font-weight: bolder;font-size: 200%;font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media (width<=500px) {
+    .login-button
+    {
+        right: 0%
+    }
+}

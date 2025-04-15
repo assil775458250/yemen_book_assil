@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="icon" href="Veva/شعار ممن.ico">
+    <title>تسجيل الدخول إلى كتب اليمن</title>
+    <style>
+bt::after
+    {
+
+        content: "";
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(60, 180, 5);
+        /* background-color: rgb(105, 105, 105); */
+        top: 0;
+        left: 0;
+        border-radius:  10px 5px 15px 8px;
+        
+    }
+.bt::before
+{
+    content: "";
+    background: linear-gradient(
+    45deg,
+    #ff0000, #2ca301, #fff700, #00e1ff, #ff03bc, #ff7b00,blue
+
+    );
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background-size: 1000%;
+    z-index: -1;
+    width: 110%;
+    height: 116%;
+    filter: blur(5px);
+    animation: glowing 20s linear infinite;
+    transition:opacity 0.3s ease-in-out;
+    border-radius:  10px 5px 15px 8px;
+    opacity: 1;
+
+}
+.bt:hover::before
+{
+    opacity: 1;
+    
+}
+.bt:active::after
+{
+    background: transparent;
+    
+}
+.bt:active
+{
+    font-size: 170%;
+    
+}
+@keyframes glowing
+{
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+   
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5 */
+        @media (width<=500px) {
+    .login-button1
+    {
+        right: 40.5%
+    }
+    .cen
+        {
+            left: 50%;
+            transform: translate(-65%,-50%);
+            margin-top: 60px;
+        }
+}
+@media (width>500px) {
+    .login-button1
+    {
+        right: 45%
+    }
+    .cen
+        {
+            left: 50%;
+            transform: translate(-50%,-50%);
+            margin-top: 60px;
+        }
+}
+        body {
+            background: #2ea602;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .hidden {
+            display: none;
+        }
+        .login-button {
+            background-color: rgb(105, 19, 185);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: -100px;
+         
+        }
+        fieldset {
+            width: 80%;
+            max-width: 500px;
+            
+            background-color: antiquewhite;
+            border: 2px solid rgb(105, 19, 185);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        legend {
+            text-align: center;
+            font-size: 150%;
+            background-color: rgb(105, 19, 185);
+            padding: 7px 15px;
+            color: white;
+            border-radius: 10px;
+        }
+        .l_i {
+            margin: 10px 0;
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button.l_i {
+            background-color: rgb(105, 19, 185);
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 12px 25px;
+            margin-top: 15px;
+        }
+        /* button.l_i:hover {
+            background-color: rgb(85, 15, 150);
+        } */
+        .logo {
+            margin-top: 100px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: block;
+            position: absolute;
+        }
+        @media (max-width: 600px) {
+            fieldset {
+                width: 90%;
+                margin-top: 70px;
+            }
+            .l_i {
+                width: 90%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <script>
+        // متغير عام لحفظ كائن الصوت
+        let ramadanAudio;
+    
+        // عند النقر لأول مرة على الصفحة
+        window.addEventListener('click', () => {
+            // إنشاء كائن الصوت
+            ramadanAudio = new Audio('veva/فاصل_نشيد___نتعلم_نخطو_نتقدم_📚✨(256k).mp3');
+            
+            ramadanAudio.volume=0.35;
+            // تفعيل خاصية التكرار
+            ramadanAudio.loop = true;
+            
+            // محاولة التشغيل
+            ramadanAudio.play().catch(e => {
+                console.log("يجب النقر على زر التشغيل أو السماح بالصوت");
+            });
+        }, {once: true});
+    </script>
+
+    <center>  
+        <img src="Veva/٢٠٢٥٠٤٠٥_١٥٠٢٠٣-gagagaga-preview.png" alt="شعار كتب اليمن" >
+    </center>
+
+   <div style="position: relative;" class="cen">
+    <form id="loginForm">
+        <center>
+        <fieldset>
+            <legend>تسجيل الدخول إلى الموقع</legend>
+            <center>
+            <div style="padding: 10px;">
+                <label for="nameInput" style="font-size: 200%;border: none;font-weight: bolder;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">الإســــم</label><br>
+                <input type="text" id="nameInput" name="name" required class="l_i">
+            </div>
+        </center>
+        <center>
+            <div style="padding: 10px;">
+                <label for="phoneInput" style="font-size: 200%;border: none;font-weight: bolder;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">رقم الجوال</label><br>
+                <input type="tel" id="phoneInput" name="phone" required class="l_i" oninput="vv(this)">
+            </div>
+        
+            <button type="button" onclick="sendToWhatsApp()" class="l_i" style="font-size: 200%;border: none;font-weight: bolder;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">إرسال </button>
+        </center>
+    </fieldset>
+    </center>
+    </form>
+</div>
+   
+  <div id="loginButtonContainer" class="hidden">
+    <a href="index2.html"><button id="loginButton" class="login-button login-button1 bt" style="position: relative;">تسجيل الدخول</button>
+    </a>
+  </div>
+   
+    <script>
+        function vv(input)
+        {
+            input.value =input.value.replace(/[^0-9]/g,'')
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            // التحقق مما إذا كان المستخدم قد أرسل البيانات من قبل
+            const hasSubmitted = localStorage.getItem('formSubmitted');
+            
+            if (hasSubmitted) {
+                // إذا كان قد أرسل من قبل، نعرض زر تسجيل الدخول ونخفي النموذج
+                document.getElementById('loginForm').classList.add('hidden');
+                document.getElementById('loginButtonContainer').classList.remove('hidden');
+            } else {
+                // إذا كان أول زيارة، نعرض النموذج ونخفي زر تسجيل الدخول
+                document.getElementById('loginForm').classList.remove('hidden');
+                document.getElementById('loginButtonContainer').classList.add('hidden');
+            }
+        });
+
+        function sendToWhatsApp() {
+            const name = document.getElementById('nameInput').value;
+            const phone = document.getElementById('phoneInput').value;
+            
+            if (name && phone) {
+                // استبدل هذا الرقم برقم الهاتف الذي تريد استقبال الرسائل عليه
+                const whatsappNumber = "775458250"; // رقم واتساب الهدف (بدون + أو 00)
+                
+                // نص الرسالة
+                const message = `تم تسجيل دخول جديد:%0A%0Aالاسم: ${encodeURIComponent(name)}%0Aرقم الجوال: ${encodeURIComponent(phone)}`;
+                
+                // إنشاء رابط واتساب
+                const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
+                
+                // فتح الرابط في نافذة جديدة
+                window.open(whatsappUrl, '_blank');
+                
+                // حفظ حالة الإرسال في localStorage
+                localStorage.setItem('formSubmitted', 'true');
+                
+                // إخفاء النموذج وإظهار زر تسجيل الدخول
+                document.getElementById('loginForm').classList.add('hidden');
+                document.getElementById('loginButtonContainer').classList.remove('hidden');
+            } else {
+                alert('يرجى ملء جميع الحقول');
+            }
+        }
+    </script>
+</body>
+</html>
