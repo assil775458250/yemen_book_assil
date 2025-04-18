@@ -293,7 +293,7 @@ header div{
 {
     display: none;
     position: absolute;
-   width: 80%;
+   width: 100%;
 
     
    
@@ -303,10 +303,6 @@ header div{
 .dropdown:hover .drop_content
 {
     display: block;
-}
-.hold:hover .drop_content
-{
-    display: none;
 }
 .ass
 {
@@ -498,4 +494,24 @@ button.l_i {
 }
 .hidden {
     display: none;
+}
+
+.intro
+{
+    background-color: blue;
+    padding: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    color: white;
+    font-size: 200%;
+    font-weight: bolder;
+    border-radius: 30%;
+}
+.had
+{
+    display: none;
+}
+.drop1:hover .had
+{
+    display: block;
 }
