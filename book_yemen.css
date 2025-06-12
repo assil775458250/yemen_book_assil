@@ -42,7 +42,7 @@ html {
 @media (width>500px) {
     .level_img
 {
-    width: 25%;height: 70vh;background-color: rgb(255, 255, 255);border-radius: 50px;margin: 20px;display: inline-block;vertical-align: top;
+    width: 25%;height: 80vh;background-color: rgb(255, 255, 255);border-radius: 50px;margin: 20px;display: inline-block;vertical-align: top;
 }
 .title
 {
