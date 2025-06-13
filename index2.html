@@ -24,15 +24,57 @@
     <link rel="stylesheet" href="book_yemen.css">
     <style>
         
+         #sing
+       {
+        width: 100%;
+        height: 50px;
+        
+        background-color: #dfbc21;
+        text-align: center;
+        
+        color: white;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+       }
     </style>
     
 </head>
 <body style="background: #E0E0E0E0;margin: 0;background-image: url(Veva/2c0afd0990a0187e3b2837fead9b2cba.jpg);background-size: 100% 100%;background-repeat: no-repeat;">
     
      
+<div id="sing" class="sing1"></div> 
 
+
+   <script>
+    const sentences =
+    [
+        "💥 اهلا وسهلا بكم في متجر الأصيل للخدمات البرمجية والتسويقية 💥",
+        "نقدم لكم العديد والعديد من الخدمات التقنية والبرمجية ومنها",
+        "انشاء المواقع الإلكترونية بمختلف أنواعها",
+        "انشاء برامج الكمبيوتر وبرامج الجوال ",
+        "عمل التصاميم المميزة لمختلف الأغراض والمجالات",
+        "والعديد العديد من المجالات الأخرى المختلفة ",
+        "ترقبوا جديدنا وعروضنا المميزة والجميلة",
+       
+        "      "
+    ];
+    let currentIndex=0;
+    const divElement = document.getElementById('sing');
+
+    function displayNextsentence()
+    {
+        divElement.textContent=sentences[currentIndex];
+        currentIndex=(currentIndex+1)%sentences.length;
+        setTimeout(displayNextsentence,3000)
+    }
+
+displayNextsentence();
+   </script>
 
 <div class="ttfshjfkuyjg" style="position: sticky;top: 0;">
+     
+
      <div class="d123" style="position: absolute;width: 35px;height: 35px;background-color: rgba(255, 255, 255, 0);top: 10px;left: 10px;z-index: 2;display: inline-block;border-radius: 10px;">
      <img class="d123" src="Veva/meun.png" alt="" style="background-color: green;position: absolute;width: 35px;height: 35px;top: 0px;left: 0px;z-index: -1;display: inline-block;box-shadow: 0 0 10px;border-radius: 10px;">
     <div class="d456" style="height: 100dvh;width: 250px;background-color: rgb(255, 255, 255);padding: 0;margin: 0;position: absolute;top: -10px;left: -10px;z-index: -1;display: inline-block;box-shadow: 0 10px 30px ;">

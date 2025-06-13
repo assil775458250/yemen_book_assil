@@ -37,6 +37,11 @@ html {
 {
     width: 100%;
 }
+.sing1
+        {
+font-size: 70%;
+line-height: 4;
+        }
 
 }
 @media (width>500px) {
@@ -56,6 +61,11 @@ html {
    padding-left: 10px;padding-right: 10px;text-align: center;font-weight: bolder;
 }
     
+.sing1
+        {
+font-size: 150%;
+line-height: 2;
+        }
 }
 
 /* إخفاء شريط التمرير في Internet Explorer و Edge */
@@ -81,7 +91,7 @@ header div{
     
     position: static;
     width: 100%;
-    border-radius:10px 10px 0 0 ;
+    /* border-radius:10px 10px 0 0 ; */
     color:white;background-color: rgb(6, 194, 34);
 
 }
