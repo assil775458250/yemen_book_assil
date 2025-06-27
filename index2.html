@@ -56,6 +56,16 @@
     }
 
 displayNextsentence();
+
+let visits = localStorage.getItem('visitCount');
+  if (!visits) {
+    visits = 0;
+  }
+  visits = parseInt(visits) + 1;
+  localStorage.setItem('visitCount', visits);
+  document.getElementById('visit-count').innerText = visits;
+
+
    </script>
 
 <div class="ttfshjfkuyjg" style="position: sticky;top: 0;">
@@ -193,6 +203,11 @@ displayNextsentence();
 
     <footer>
         <p>جميع الحقوق محفوظة © 2025 الأصيل للخدمات البرمجية</p>
+
+        <span style="font-size: 200%;font-weight: bolder;">( </span>
+<a href="https://www.freecounterstat.com" title="website counter widget"><img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=jgfr6ddwh49hrbjbj55punq72rrzlzxu" border="0" title="website counter widget" alt="website counter widget"></a>      <span style="font-size: 200%;font-weight: bolder;"> ) عدد الزيارات</span> 
+    
+
       </footer>
 
 </body>
