@@ -582,3 +582,14 @@ button.l_i {
         color: black;
         text-decoration: none;
     }
+
+    #information
+    {
+        position: absolute;
+        top: 40px;
+        right: 5%;
+        font-size:300%;
+        color: white;
+        border-radius: 50%;
+        box-shadow: 0 0 10px white;
+    }
