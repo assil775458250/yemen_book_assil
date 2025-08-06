@@ -40,7 +40,7 @@
     </script>
 
    <div align="center">
-        <img src="Veva/رفيق 2.png" alt="شعار كتب اليمن" class="IMG_MAIN" style="text-align: center;height: 500px;">
+        <img src="Veva/رفيق 2.png" alt="شعار كتب اليمن" class="IMG_MAIN" id="img_icon" style="text-align: center;height: 500px;">
         <div style="text-align: center;margin-top: -100PX;">
        <a href="index2.html"> <img src="output-onlinegiftools.gif" alt="" style="width: 100px;"> </a>
         </div>
@@ -53,10 +53,15 @@
 </div> -->
 
 <script>
-    setTimeout(function(){
+    let img_icon = document.getElementById('img_icon');
+    
+    img_icon.onload = function() {
+   setTimeout(function(){
         location.pathname='/yemen_book_assil/index2.html';
     }
     ,5000)
+};
+   
 </script>
 
 </body>
